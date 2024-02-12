@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>足球圈移动端布局</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            display: block;
+        }
+
+        html {
+            font-size: 100px;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header,
+        footer {
+            height: .88rem;
+            width: 6.4rem;
+            /* background-color: grey; */
+        }
+
+        main {
+            flex: 1;
+            overflow: auto;
+            background-color: yellowgreen;
+        }
+
+        /* header设置 */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0cc440;
+        }
+
+        header div {
+            width: 1.22rem;
+            height: 0.52rem;
+            border: 0.01rem solid #59df7c;
+            text-align: center;
+            line-height: 0.52rem;
+            font-size: 0.26rem;
+        }
+
+        header div:nth-child(1) {
+            border-radius: 0.26rem 0 0 0.26rem;
+            background-color: #63d985;
+            color: #fffdff;
+        }
+
+        header div:nth-child(2) {
+            border-radius: 0 0.26rem 0.26rem 0;
+            background-color: #3dd066;
+            color: #a7e1bb;
+        }
+
+        /* footer的设置 */
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* background-color: #f4f5f9; */
+        }
+
+        footer div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #d6d6d6;
+            background-color: #ffffff;
+        }
+
+        footer div span.iconfont {
+            font-size: .34rem;
+
+        }
+
+        footer div span:nth-child(2) {
+            height: 0.25rem;
+            line-height: .25rem;
+            font-size: .25rem;
+        }
+
+        footer div:nth-child(3) {
+            position: relative;
+        }
+
+        footer div:nth-child(3) span {
+            font-size: .6rem;
+            border: .01rem solid #d6d6d6;
+            border-radius: 50%;
+            padding: .32rem;
+            position: absolute;
+            /* top: 50%; */
+            top: -0.9rem;
+            left: -0.6rem;
+            background-color: #ffffff;
+        }
+
+        /* main设置 */
+        main .main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 0.7rem;
+            background-color: #f4f5f9;
+        }
+
+        main div.main div {
+            font-size: 0.28rem;
+            height: 0.7rem;
+            line-height: 0.7rem;
+            color: #666666;
+        }
+
+        main div.content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #f4f5f9;
+        }
+
+        main div.content .pic {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            height: 3.74rem;
+        }
+
+        main div.content .pic img {
+            width: 100%;
+            height: 3.16rem;
+        }
+
+        main div.content .pic p {
+            font-size: 0.28rem;
+            flex: 0.58rem;
+            line-height: 0.58rem;
+            text-align: center;
+            color: #343434;
+            background-color: #ffffff;
+        }
+    </style>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 100 + 'px';
+    </script>
+</head>
+
+<body>
+    <header>
+        <div>热点</div>
+        <div>关注</div>
+    </header>
+    <main>
+        <div class="main">
+            <div>足球现场</div>
+            <div>足球生活</div>
+            <div>足球美女</div>
+        </div>
+        <div class="content">
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+            <div class="pic">
+                <img src="./未标题-3.png" alt="">
+                <p>小丸子啊小丸子</p>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div><span class="iconfont icon-shouye"></span><span>首页</span></div>
+        <div><span class="iconfont icon-fangdajing"></span><span>发现</span></div>
+        <div><span class="iconfont icon-zhaoxiangji center"></span></div>
+        <div><span class="iconfont icon-wode"></span><span>我的</span></div>
+        <div><span class="iconfont icon-tuichu"></span><span>退出</span></div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 30px;
+            background-color: yellowgreen;
+            position: relative;
+        }
+
+        div ul {
+            transition: all 5s;
+            position: absolute;
+            top: 30px;
+            background-color: skyblue;
+            display: none;
+            width: 200px;
+            opacity: 0;
+        }
+
+        div:hover ul {
+            display: block;
+            opacity: 1;
+        }
+
+        p {
+            transition: all 1s;
+            opacity: 0;
+        }
+
+        p:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        我的菜单
+        <p>好的啊</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

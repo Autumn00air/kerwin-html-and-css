@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>锚点</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div div {
+            width: auto;
+            height: 800px;
+            border: 1px solid red;
+        }
+
+        .right {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            width: 100px;
+            height: 400px;
+            background-color: skyblue;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .right ul li {
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="right">
+        <ul>
+            <li><a href="#1">1</a></li>
+            <li><a href="#2">2</a></li>
+            <li><a href="#3">3</a></li>
+            <li><a href="#4">4</a></li>
+        </ul>
+    </div>
+    <div>
+        <div id="1">
+            京东秒杀
+        </div>
+        <div id="2">
+            双11
+        </div>
+        <div id="3">
+            618
+        </div>
+        <div id="4">
+            1212
+        </div>
+    </div>
+</body>
+
+</html>

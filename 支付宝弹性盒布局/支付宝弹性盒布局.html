@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付宝弹性盒布局</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            display: block;
+        }
+
+        .root {
+            margin: 0 auto;
+            display: flex;
+            width: 955px;
+            height: 1425px;
+            background-color: #f4f5f9;
+            flex-direction: column;
+        }
+
+        header {
+            height: 404px;
+            background-color: #242a3a;
+            color: #fff;
+        }
+
+        header .up {
+            height: 176px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header .up .left span {
+            margin-left: 18px;
+        }
+
+        header .up .right span {
+            margin: 0 31px;
+        }
+
+        header .down {
+            height: 228px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        header .left {
+            height: 176px;
+            line-height: 176px;
+            text-align: center;
+            font-size: 47px;
+            color: #fff;
+        }
+
+        header .right {
+            height: 176px;
+            line-height: 176px;
+            text-align: center;
+            font-size: 47px;
+            color: #fff;
+        }
+
+        header .down div {
+            width: 114px;
+            height: 186px;
+            color: #fff;
+        }
+
+        header .down div span {
+            font-size: 103px;
+            display: block;
+            text-align: center;
+            margin-bottom: calc(186px-103px-36px);
+        }
+
+        header .down div p {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        footer {
+            height: 130px;
+            background-color: #fafbfd;
+        }
+
+        main {
+            justify-content: space-between;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main .list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        main .list div {
+            flex: 1;
+            width: 237px;
+            height: 207px;
+            background-color: #fff;
+            text-align: center;
+            border: 1px solid #f2f2f2;
+        }
+
+        main .pic {
+
+            background-color: #f4f5f9;
+            margin: 26px 0 0 0;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        footer div {
+            width: 84x;
+            height: 96px;
+            color: #cccdcf;
+        }
+
+        footer div span {
+            font-size: 60px;
+            display: block;
+            text-align: center;
+            margin-bottom: calc(96px-60px-25px);
+        }
+
+        footer div p {
+            font-size: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <header>
+            <div class="up">
+                <div class="left">
+                    <span class="iconfont icon-quanbudingdan-01"></span>
+                    <span>账单</span>
+                </div>
+                <div class="right">
+                    <span class="iconfont icon-wode"></span>
+                    <span class="iconfont icon-quanbudingdan-01"></span>
+                    <span class="iconfont icon-sousuo"></span>
+                </div>
+            </div>
+            <div class="down">
+                <div>
+                    <span class="iconfont icon-zhifu-01
+                    左箭头
+                    "></span>
+                    <p>支付</p>
+                </div>
+                <div>
+                    <span class="iconfont icon-weixin2"></span>
+                    <p>微信</p>
+                </div>
+                <div>
+                    <span class="iconfont icon-iconhuidaoshouye"></span>
+                    <p>首页</p>
+                </div>
+                <div>
+                    <span class="iconfont icon-kefu"></span>
+                    <p>客服</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="list">
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+                <div><img src="./未标题-1.png" alt=""></div>
+            </div>
+            <div class="pic">
+                <img src="./未标题-2.png" alt="">
+            </div>
+        </main>
+        <footer>
+            <div>
+                <span class="iconfont icon-zhifubao1
+                "></span>
+                <p>支付宝</p>
+            </div>
+            <div>
+                <span class="iconfont icon-xiaoxi
+                "></span>
+                <p>信息</p>
+            </div>
+            <div>
+                <span class="iconfont icon-yonghu
+                "></span>
+                <p>朋友</p>
+            </div>
+            <div>
+                <span class="iconfont icon-wode
+                "></span>
+                <p>我的</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

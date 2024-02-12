@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网格布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 600px;
+            height: 400px;
+            border: 1px solid #000;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "a a a"
+                "d e f"
+                "d b i";
+            gap: 20px;
+        }
+
+        .item {
+            border: 1px solid green;
+        }
+
+        .item:nth-child(1) {
+            grid-area: a;
+        }
+
+        .item:nth-child(2) {
+            grid-area: d;
+        }
+
+        .item:nth-child(3) {
+            grid-area: e;
+        }
+
+        .item:nth-child(4) {
+            grid-area: f;
+        }
+
+        .item:nth-child(5) {
+            grid-area: b;
+        }
+
+        .item:nth-child(6) {
+            grid-area: i;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+
+
+
+
+    </div>
+</body>
+
+</html>

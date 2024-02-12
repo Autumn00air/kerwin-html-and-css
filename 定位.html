@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .beijing {
+            width: 500px;
+            height: 500px;
+            background-color: yellowgreen;
+            margin: auto;
+            margin-top: calc((100vh - 500px) / 2);
+            /* position: relative; */
+        }
+
+        .fudong {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* position: absolute; */
+            position: relative;
+            /* 设置了position为absolute，但是不设置父元素为相对定位，不设置top和left，会默认不动，在原来的位置 */
+            /* 之后再设置top为50px，会令元素的top离浏览器最顶部为50px，左右位置还是不变 */
+            /* 再之后设置left为50px，会令元素的left离浏览器最左边为50px，如果没设置top，上下位置还是不变,还在原来的位置 */
+            /* 设置了父元素为相对定位之后，元素的top和left是相对于父元素的顶部和最左边，如果设置了才会生效，如果left没设置，还是left在原来的位置，top同理 */
+            /* 如果设置定位为relative，元素的top和left是相对于元素原来的位置，如果设置了才会生效，如果left没设置，还是left在原来的位置，top同理 */
+            top: 50px;
+            left: 50px;
+        }
+
+        .fuzhu {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="beijing">
+        <div class="fuzhu"></div>
+        <div class="fudong"></div>
+    </div>
+</body>
+
+</html>

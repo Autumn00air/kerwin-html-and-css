@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+
+
+        div {
+            height: 100%;
+        }
+
+        .left {
+            min-width: 200px;
+            max-width: 600px;
+            height: 100%;
+            background-color: yellowgreen;
+        }
+
+        .left,
+        .right {
+            float: left;
+        }
+
+        .right {
+            width: calc(100% - 200px);
+            height: 100%;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

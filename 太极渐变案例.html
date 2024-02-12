@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太极渐变案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to bottom, #fff 50%, #000 50%);
+            position: relative;
+            border-radius: 50%;
+        }
+
+        .left {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, #000 25%, #fff 25%);
+            position: absolute;
+            top: calc(50% - 50px);
+            border-radius: 50%;
+        }
+
+        .right {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, #fff 25%, #000 25%);
+            position: absolute;
+            top: calc(50% - 50px);
+            left: 100px;
+            border-radius: 50%;
+        }
+    </style>
+
+<body>
+    <div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

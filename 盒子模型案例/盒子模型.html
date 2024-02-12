@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            width: 263px;
+            height: 364px;
+            /* background-color: yellowgreen; */
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #small {
+            border-left: 2px solid #254282;
+            font-size: 17px;
+            color: #254282;
+            margin: 11px;
+            height: 18px;
+            line-height: 18px;
+            text-indent: 4px;
+        }
+
+        #big {
+            width: 240px;
+            height: 170px;
+            margin: 11px;
+            display: block;
+            text-align: center;
+        }
+
+        #big img {
+            width: 100%;
+            display: block;
+        }
+
+        #big span {
+            display: block;
+            height: 26px;
+            line-height: 26px;
+            color: black;
+            font-size: 12px;
+            background-color: #f6f7f8;
+        }
+
+        #twoPhotos {
+            margin: 16px 11px;
+            width: 240px;
+            height: 120px;
+            display: block;
+        }
+
+        #left {
+            margin-right: 16px;
+            width: 112px;
+            float: left;
+        }
+
+        #right {
+            /* margin-left: 16px; */
+            width: 112px;
+            float: left;
+        }
+
+        #twoPhotos img {
+            width: 100%;
+            display: block;
+        }
+
+        #twoPhotos p {
+            height: 35px;
+            background-color: #f6f7f8;
+            font-size: 12px;
+            text-indent: 12px;
+            color: #222222;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="small">女人照片</div>
+        <div id="big">
+            <img src="./img/1.png" alt="">
+            <span>大姐利用联盟经营美容院</span>
+        </div>
+        <div id="twoPhotos">
+            <div id="left">
+                <img src="./img/2.png" alt="">
+                <p>无效化妆，无效穿搭</p>
+            </div>
+            <div id="right">
+                <img src="./img/3.png" alt="">
+                <p>小个子不要自卑，也能高人一等</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
